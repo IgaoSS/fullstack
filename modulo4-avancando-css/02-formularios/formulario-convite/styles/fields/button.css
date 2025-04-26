@@ -1,0 +1,22 @@
+.action-wrapper{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: end;
+
+    & button{
+        border: none;
+        background-color: var(--brand-dark);
+        padding: .8125rem 1.25rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        font: var(--text-md);
+        color: var(--text-heading);
+        cursor: pointer;
+
+        &:hover{
+            background-color: var(--brand-mid);
+        }
+    }
+}

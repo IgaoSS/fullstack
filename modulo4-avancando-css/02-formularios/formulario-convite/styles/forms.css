@@ -10,6 +10,14 @@ fieldset{
     gap: 1rem;
 }
 
+fieldset + fieldset{
+    margin-top: 3rem;
+}
+
+fieldset:last-of-type{
+    margin-bottom: 3rem;
+}
+
 legend{
     display: flex;
     gap: .75rem;

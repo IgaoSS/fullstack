@@ -36,31 +36,31 @@
                         </legend>
 
                         <div class="input-wrapper">
-                            <label for="eventName">Título</label>
-                            <input type="text" id="eventName" name="eventName" placeholder="Nome do evento">
+                            <label for="event-name">Título</label>
+                            <input type="text" id="event-name" name="event-name" placeholder="Nome do evento">
                         </div>
 
-                        <div class="grid grid-column">
-                            <div class="input-wrapper">
-                                <label for="dateStart">Início</label>
-                                <input type="datetime-local" name="dateStart" id="dateStart">
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="date-start">Início</label>
+                                <input type="datetime-local" name="date-start" id="date-start">
                             </div>
 
-                            <div class="input-wrapper">
-                                <label for="dateEnd">Fim</label>
-                                <input type="datetime-local" name="dateEnd" id="dateEnd">
+                            <div class="input-wrapper flex-1">
+                                <label for="date-end">Fim</label>
+                                <input type="datetime-local" name="date-end" id="date-end">
                             </div>
                         </div>
                         
-                        <div class="grid grid-column">
-                            <div class="input-wrapper">
-                                <label for="type">Tipo</label>
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label>Tipo</label>
 
                                 <div class="radio-wrapper flex">
                                     <div class="radio-inner flex-1">
-                                        <input type="radio" name="type" id="inPerson">
+                                        <input type="radio" name="type" id="in-person">
                                         <div class="radio-image"></div>
-                                        <label for="inPerson">Presencial</label>
+                                        <label for="in-person">Presencial</label>
                                     </div>
 
                                     <div class="radio-inner flex-1">
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
 
-                            <div class="input-wrapper">
+                            <div class="input-wrapper flex-1">
                                 <label for="local">Local</label>
                                 <input type="text" name="local" id="local" placeholder="Link ou endereço">
                             </div>
@@ -82,6 +82,234 @@
                             <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
                         </div>
                     </fieldset>
+
+                    <fieldset class="customization">
+                        <legend>
+                            <img src="./assets/icons/paintbrush-vertical.svg" alt="">
+                            <h3>Personalização</h3>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label>Cor principal</label>
+
+                            <div class="radio-wrapper flex">
+                                <div class="radio-inner-color">
+                                    <label for="color-blue"></label>
+                                    <input type="radio" name="color" id="color-blue">
+                                    <div class="radio-color" style="--color: #59B2FF"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-navy"></label>
+                                    <input type="radio" name="color" id="color-navy">
+                                    <div class="radio-color" style="--color: #6A59FF"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-purple"></label>
+                                    <input type="radio" name="color" id="color-purple">
+                                    <div class="radio-color" style="--color: #B259FF"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-fuschia"></label>
+                                    <input type="radio" name="color" id="color-fuschia">
+                                    <div class="radio-color" style="--color: #FF59F9"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-pink"></label>
+                                    <input type="radio" name="color" id="color-pink">
+                                    <div class="radio-color" style="--color: #FF598B"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-danger"></label>
+                                    <input type="radio" name="color" id="color-danger">
+                                    <div class="radio-color" style="--color: #FF5959"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-orange"></label>
+                                    <input type="radio" name="color" id="color-orange">
+                                    <div class="radio-color" style="--color: #FF8B59"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-yellow"></label>
+                                    <input type="radio" name="color" id="color-yellow">
+                                    <div class="radio-color" style="--color: #FFCD59"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-lime"></label>
+                                    <input type="radio" name="color" id="color-lime">
+                                    <div class="radio-color" style="--color: #E1FF59"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-green"></label>
+                                    <input type="radio" name="color" id="color-green">
+                                    <div class="radio-color" style="--color: #59FF91"></div>
+                                </div>
+
+                                <div class="radio-inner-color">
+                                    <label for="color-cyan"></label>
+                                    <input type="radio" name="color" id="color-cyan">
+                                    <div class="radio-color" style="--color: #59FFF9"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label>Tema do evento</label>
+
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image.svg" alt="">
+                                    <input type="radio" name="event-theme" id="birthday">
+                                    <label for="birthday">Aniversário</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-1.svg" alt="">
+                                    <input type="radio" name="event-theme" id="children">
+                                    <label for="children">Infantil</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-2.svg" alt="">
+                                    <input type="radio" name="event-theme" id="graduation">
+                                    <label for="graduation">Formatura</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-3.svg" alt="">
+                                    <input type="radio" name="event-theme" id="marriage">
+                                    <label for="marriage">Casamento</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-4.svg" alt="">
+                                    <input type="radio" name="event-theme" id="baby-shower">
+                                    <label for="baby-shower">Chá de bebê</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-5.svg" alt="">
+                                    <input type="radio" name="event-theme" id="pot-tea">
+                                    <label for="pot-tea">Chá de panela</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-6.svg" alt="">
+                                    <input type="radio" name="event-theme" id="carnival">
+                                    <label for="carnival">Carnaval</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-7.svg" alt="">
+                                    <input type="radio" name="event-theme" id="easter">
+                                    <label for="easter">Páscoa</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-8.svg" alt="">
+                                    <input type="radio" name="event-theme" id="saint-john">
+                                    <label for="saint-john">São João</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-9.svg" alt="">
+                                    <input type="radio" name="event-theme" id="halloween">
+                                    <label for="halloween">Halloween</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-10.svg" alt="">
+                                    <input type="radio" name="event-theme" id="christmas">
+                                    <label for="christmas">Natal</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <img src="./assets/images/Image-11.svg" alt="">
+                                    <input type="radio" name="event-theme" id="other">
+                                    <label for="other">Outro</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---
+                        <div class="flex">
+                            <div class="checkbox-wrapper flex-1">
+                                <label for="style">Estilo</label>
+                                <input type="checkbox" name="style" id="style">
+                                <div class="toggle-checkbox"></div>
+                            </div>
+                        </div>
+                        --->
+                    </fieldset>
+
+                    <fieldset class="contact">
+                        <legend>
+                            <img src="./assets/icons/contact.svg" alt="">
+                            <h3>Dados para contato</h3>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Nome completo" required>
+                            <div class="error">
+                                <img src="./assets/icons/alert-circle.svg" alt="Ícone de alerta vermelho">
+                                <span>Campo obrigatório</span>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                            </div>
+
+                            <div class="input-wrapper flex-1">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" name="phone" id="phone" placeholder="(99) 99999-9999">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                        <div class="checkbox-inner">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms" id="terms">
+                            <label for="terms">
+                                Li e concordo com os&nbsp;<strong>Termos e Condições</strong>&nbsp;e com a&nbsp;<strong>Política de Privacidade</strong>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-inner">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="agree-update-email" id="agree-update-email">
+                            <label for="agree-update-email">
+                                Aceito receber atualizações e promoções por e-mail
+                            </label>
+                        </div>
+
+                        <div class="checkbox-inner">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="agree-update-sms" id="agree-update-sms">
+                            <label for="agree-update-sms">
+                                Aceito receber atualizações e promoções por SMS
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="action-wrapper">
+                        <button type="button">
+                            <img src="./assets/icons/ticket.svg" alt="">
+                            Gerar convite
+                        </button>
+                    </div>
                 </form>
             </div>
         </main>

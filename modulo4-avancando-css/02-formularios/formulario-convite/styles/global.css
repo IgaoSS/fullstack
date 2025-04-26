@@ -76,18 +76,15 @@ h3{
     font: var(--text-heading-sm);
 }
 
-.grid{
-    display: grid;
-}
-
-.grid-column{
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
-}
-
 .flex{
     display: flex;
+    gap: 1rem;
 }
 
 .flex-1{
     flex: 1;
+}
+
+.flex-2{
+    flex: 2;
 }
