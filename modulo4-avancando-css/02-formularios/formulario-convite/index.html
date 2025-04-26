@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivite</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="app">
+        <aside>
+            <div class="aside-container">
+                <header>
+                    <img src="./assets/Logo.svg" alt="Ícone de confetes">
+                    <h1>Festivite</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </header>
+            </div>
+        </aside>
+        
+        <main>
+            <div class="main-container">
+                <h2>Crie seu convite</h2>
+
+                <form method="post" enctype="multipart/form-data"></form>
+                    <fieldset class="about-event">
+                        <legend>
+                            <img src="./assets/icons/calendar.svg" alt="">
+                            <h3>Sobre o evento</h3>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="eventName">Título</label>
+                            <input type="text" id="eventName" name="eventName" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="grid grid-column">
+                            <div class="input-wrapper">
+                                <label for="dateStart">Início</label>
+                                <input type="datetime-local" name="dateStart" id="dateStart">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="dateEnd">Fim</label>
+                                <input type="datetime-local" name="dateEnd" id="dateEnd">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-column">
+                            <div class="input-wrapper">
+                                <label for="type">Tipo</label>
+
+                                <div class="radio-wrapper flex">
+                                    <div class="radio-inner flex-1">
+                                        <input type="radio" name="type" id="inPerson">
+                                        <div class="radio-image"></div>
+                                        <label for="inPerson">Presencial</label>
+                                    </div>
+
+                                    <div class="radio-inner flex-1">
+                                        <input type="radio" name="type" id="online">
+                                        <div class="radio-image"></div>
+                                        <label for="online">Online</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="local">Local</label>
+                                <input type="text" name="local" id="local" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
