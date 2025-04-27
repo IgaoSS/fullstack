@@ -1,3 +1,67 @@
+.customization .checkbox-wrapper{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    
+    .checkbox-inner{
+        position: relative;
+        border: 1px solid;
+        width: 4rem;
+        padding: .25rem;
+        border-radius: 999px;
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        cursor: pointer;
+
+        & input{
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+        & .slider{
+            background-color: var(--input-stroke);
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 999px;
+        }
+    }
+
+    & label{
+        margin: 0;
+        cursor: pointer;
+    }
+
+    &:has(:checked){
+        & .checkbox-inner{
+            background-color: var(--brand-light);
+        }
+        
+        & .slider{
+            margin-left: auto;
+            background-color: var(--text-heading);
+        }
+
+        & .dark{
+            display: none;
+        }
+
+        & .light{
+            display: block;
+        }
+    }
+
+    &:not(:has(:checked)){
+        & .dark{
+            display: block;
+        }
+
+        & .light{
+            display: none;
+        }
+    }
+}
+
 .terms-wrapper{
     padding-top: 2.5rem;
     border-top: 1px solid var(--input-stroke);
