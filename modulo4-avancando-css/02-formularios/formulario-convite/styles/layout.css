@@ -42,7 +42,7 @@ main {
     overflow-x: auto;
 
     & .main-container {
-        margin: 5rem 1.125rem;
-        border: 1px solid white;
+        margin: 5rem 8.125rem;
+    
     }
 }

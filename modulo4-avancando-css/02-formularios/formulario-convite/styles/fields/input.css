@@ -1,7 +1,7 @@
 input, textarea{
     appearance: none;
     background-color: var(--input-base);
-    border: 1px solid var(--input-stroke);
+    
     width: 100%;
     border-radius: .5rem;
     padding: .8125rem 1rem;
@@ -9,6 +9,9 @@ input, textarea{
     font-weight: 400;
     color: var(--input-placeholder);
     resize: none;
+
+    border: 1px solid transparent;
+    outline: 1px solid var(--input-stroke);
 
     &::placeholder{
         color: var(--input-placeholder);
@@ -19,6 +22,12 @@ label{
     font: var(--text-sm);
     display: flex;
     margin-bottom: .75rem;
+}
+
+input:focus,
+textarea:focus{
+    border-color: var(--brand-light);
+    outline-offset: .1px;
 }
 
 input[type="datetime-local"]{
@@ -35,5 +44,13 @@ input{
         margin-top: .5rem;
         font: var(--text-xs);
         color: var(--feedback);
+    }
+
+    &:invalid{
+        border-color: var(--feedback);
+    }
+
+    &:not(:focus):valid + .error{
+        display: none;
     }
 }

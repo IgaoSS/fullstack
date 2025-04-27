@@ -28,7 +28,7 @@
             <div class="main-container">
                 <h2>Crie seu convite</h2>
 
-                <form method="post" enctype="multipart/form-data"></form>
+                <form method="post" enctype="multipart/form-data">
                     <fieldset class="about-event">
                         <legend>
                             <img src="./assets/icons/calendar.svg" alt="">
@@ -56,7 +56,7 @@
                             <div class="input-wrapper flex-1">
                                 <label>Tipo</label>
 
-                                <div class="radio-wrapper flex">
+                                <div class="radio-wrapper radio-group">
                                     <div class="radio-inner flex-1">
                                         <input type="radio" name="type" id="in-person">
                                         <div class="radio-image"></div>
@@ -92,7 +92,7 @@
                         <div class="input-wrapper">
                             <label>Cor principal</label>
 
-                            <div class="radio-wrapper flex">
+                            <div class="radio-wrapper">
                                 <div class="radio-inner-color">
                                     <label for="color-blue"></label>
                                     <input type="radio" name="color" id="color-blue">
@@ -239,15 +239,14 @@
                             </div>
                         </div>
 
-                        <!---
-                        <div class="flex">
-                            <div class="checkbox-wrapper flex-1">
-                                <label for="style">Estilo</label>
-                                <input type="checkbox" name="style" id="style">
-                                <div class="toggle-checkbox"></div>
+                        <div class="input-wrapper">
+                            <label for="style">Estilo</label>
+
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" name="" id="">
+                                <div class="slider"></div>
                             </div>
                         </div>
-                        --->
                     </fieldset>
 
                     <fieldset class="contact">
@@ -305,7 +304,7 @@
                     </div>
 
                     <div class="action-wrapper">
-                        <button type="button">
+                        <button type="submit">
                             <img src="./assets/icons/ticket.svg" alt="">
                             Gerar convite
                         </button>
