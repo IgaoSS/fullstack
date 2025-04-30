@@ -14,6 +14,10 @@ fieldset + fieldset{
     margin-top: 3rem;
 }
 
+fieldset.customization > div.flex{
+    margin-top: .75rem;
+}
+
 fieldset:last-of-type{
     margin-bottom: 3rem;
 }
