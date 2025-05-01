@@ -46,25 +46,3 @@
           }
     }
 }
-
-
-/* Button */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 4px 12px;
-gap: 8px;
-
-width: 119px;
-height: 40px;
-
-background: #2D3136;
-border-radius: 8px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
